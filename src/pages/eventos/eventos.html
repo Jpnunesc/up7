@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons left>
+            <button ion-button (click)="login()">
+              <ion-icon name="arrow-back" style="font-size: 2.5em;"></ion-icon>
+            </button>
+          </ion-buttons>
+        <h1 style="color:aliceblue; text-align:center;"> Eventos
+        </h1>
+      </ion-toolbar>
+</ion-header>
+<ion-content padding style="background: gray;">
+    <button ion-button color="dark" full (click)=eventosx()>Janeiro</button>
+    <button ion-button color="dark" full (click)=eventosx()>Fevereiro</button>
+    <button ion-button color="dark" full (click)=eventosx()>Março</button>
+    <button ion-button color="dark" full (click)=eventosx()>Abril</button>
+    <button ion-button color="dark" full (click)=eventosx()>maio</button>
+    <button ion-button color="dark" full (click)=eventosx()>Junho</button>
+    <button ion-button color="dark" full (click)=eventosx()>Julho</button>
+    <button ion-button color="dark" full (click)=eventosx()>Agosto</button>
+    <button ion-button color="dark" full (click)=eventosx()>Setembro</button>
+    <button ion-button color="dark" full (click)=eventosx()>Outubro</button>
+    <button ion-button color="dark" full (click)=eventosx()>Novembro</button>
+    <button ion-button color="dark" full (click)=eventosx()>Dezembro</button>
+</ion-content>
+<ion-footer>
+    <ion-toolbar color="dark">
+      <div class="footer">
+        <div>
+          <ion-icon ios="ios-car" md="md-car" (click)="antigos()"></ion-icon>
+          <p>Antigos</p>
+        </div>
+        <div>
+          <ion-icon ios="ios-calendar" md="md-calendar" (click)="eventos()"></ion-icon>
+          <p>Eventos</p>
+        </div>
+        <div>
+          <ion-icon name="ios-car-outline" (click)="seminovos()"></ion-icon>
+          <p>SemiNovos</p>
+        </div>
+        <div>
+          <ion-icon ios="ios-document" md="md-document" (click)="rifas()"></ion-icon>
+          <p>Rifas</p>
+        </div>
+        <div>
+          <ion-icon ios="ios-add-circle" md="md-add-circle" (click)="mais()"></ion-icon>
+          <p>Mais...</p>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>

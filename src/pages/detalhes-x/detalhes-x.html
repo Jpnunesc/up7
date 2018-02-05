@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons left>
+            <button ion-button (click)="seminovos()">
+              <ion-icon name="arrow-back" style="font-size: 2.5em;"></ion-icon>
+            </button>
+          </ion-buttons>
+      <h1 style="color:aliceblue; text-align:center;"> UP7 SemiNovos
+      </h1>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding style="background: gray;">
+    <div class="corpo">
+      <div class="produto">
+          <ion-slides pager>
+              
+                <ion-slide>
+                    <img src="assets/imgs/n1.jpeg" alt="">
+                  </ion-slide>
+                  <ion-slide>
+                    <img src="assets/imgs/n2.jpeg" alt="">
+                  </ion-slide>
+                  <ion-slide>
+                    <img src="assets/imgs/n4.jpeg" alt="">
+                  </ion-slide>
+                  <ion-slide>
+                    <img src="assets/imgs/n5.jpeg" alt="">
+                  </ion-slide>
+                  <!-- <ion-slide>
+                    <img src="assets/imgs/p6.jpeg" alt="">
+                  </ion-slide>
+                  <ion-slide>
+                    <img src="assets/imgs/p7.jpeg" alt="">
+                  </ion-slide>
+                  <ion-slide>
+                    <img src="assets/imgs/p8.jpeg" alt="">
+                  </ion-slide> -->
+              </ion-slides>
+      </div>
+    </div>
+    <div class="meio">
+      <h4>AUDI S5 3.0 TFSI QUATTRO</h4>
+      <h5>INFORMAÇÕES GERAIS</h5>
+      <p>MODELO: S5 3.0 TFSI Quattro</p>
+      <p>ANO FABRICAÇÃO/ANO MODELO: 2012/2012</p>
+      <p>COR: Branco</p>
+      <p>PORTAS: 2</p>
+      <p>QUILOMETRAGEM: 65.200</p>
+      <p>VALOR: R$ 180.000,00</p>
+    </div>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar (click)="Modal()" color="dark">
+      <div class="footer">
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>
+        <p>LIGAR PARA VENDEDOR</p>
+      </div>
+    </ion-toolbar>
+  </ion-footer>

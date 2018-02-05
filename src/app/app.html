@@ -1,0 +1,43 @@
+<ion-menu type="overlay" [content]="content"> -->
+
+  <ion-header class="headerMenu1">
+      <ion-buttons end>
+    <img class="close" menuClose src="assets/imgs/0-65.png" alt="">
+    </ion-buttons>
+    <div class="headerMenu2">
+      <img style=" width:200px;
+      height: 200px;" class="profile" src="assets/imgs/a3.jpg" alt="">
+    </div>
+</ion-header>   
+  <ion-content class="mainMenu">
+    <ion-list>
+      <div class="listaPrincipal">
+        <div class="item" (click)="openPage(1)" menuClose>
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+          <p>Inicio</p>
+        </div>
+        <div class="item" (click)="openPage(2)" menuClose>
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+          <p>Eventos</p>
+        </div>
+        <div class="item" (click)="openPage(3)" menuClose>
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+          <p>Sobre a empresa</p>
+        </div>
+        </div>
+
+      <ion-footer>
+        <!-- <div class="item" menuClose>
+          <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
+          <p>Fale Conosco</p>
+        </div> -->
+        <div class="item" (click)="openPage(6)" menuClose>
+          <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+          <p>Contato</p>
+        </div>
+      </ion-footer>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons left>
+          <button ion-button (click)="login()">
+            <ion-icon name="arrow-back" style="font-size: 2.5em;"></ion-icon>
+          </button>
+        </ion-buttons>
+    <h1 style="color:aliceblue; text-align:center;"> UP7 Antigos
+    </h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding style="background: gray;">
+  <div class="corpo">
+    <div class="produto">
+        <ion-slides pager>
+            
+              <ion-slide>
+                  <img src="assets/imgs/p1.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p2.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p3.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p6.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p5.jpeg" alt="">
+                </ion-slide>
+                <!-- <ion-slide>
+                  <img src="assets/imgs/p6.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p7.jpeg" alt="">
+                </ion-slide>
+                <ion-slide>
+                  <img src="assets/imgs/p8.jpeg" alt="">
+                </ion-slide> -->
+            </ion-slides>
+    </div>
+  </div>
+  <div class="meio">
+    <h4>ALFA ROMEO 156 ELEGANT 2.0 16V</h4>
+    <h5>INFORMAÇÕES GERAIS</h5>
+    <p>MARCA: Alfa Romeo</p>
+    <p>MODELO: 156 Elegant 2.0 16V</p>
+    <p>ANO FABRICAÇÃO/ANO MODELO: 1998/1999</p>
+    <p>COR: Azzurro Fantasia</p>
+    <p>PORTAS: 4</p>
+    <p>QUILOMETRAGEM: 175.500</p>
+    <p>VALOR: R$ 29.900,00</p>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar (click)="Modal()" color="dark">
+    <div class="footer">
+      <ion-icon ios="ios-call" md="md-call"></ion-icon>
+      <p>LIGAR PARA VENDEDOR</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

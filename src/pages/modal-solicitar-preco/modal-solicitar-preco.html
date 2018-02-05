@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Solicitação de Preço</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content >
+  <div>
+    <ion-list>
+      <ion-item>
+          <ion-label >NOME:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >E-MAIL:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >QUANTIDADE:</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label >TELEFONE:</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+          <ion-item>
+              <ion-label>CACHAÇA</ion-label>
+              <ion-select [(ngModel)]="toppings" multiple="true">
+                <ion-option>Urucuiana Jequitiba Rosa</ion-option>
+                <ion-option>Urucuiana Umburana</ion-option>
+                <ion-option>Urucuiana Carvalho</ion-option>
+              </ion-select>
+            </ion-item>
+    </ion-list>
+  </div>
+  <div (click)="closeModal()">
+  <ion-row>
+      <ion-col  class="signup-col">
+        <button  ion-button color="dark" full>ENVIAR</button>
+      </ion-col>
+    </ion-row>
+  </div>  
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <h1 style="color:aliceblue; text-align:center;"> UP7 Antigos
+    </h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="corpo">
+    <div class="destaques">
+      <div class="gridProdutos">
+        <div class="produto">
+          <img src="assets/imgs/p1.jpeg" alt="">
+          <div class="produtoInfos">
+            <h6>ALFA ROMEO 156 ELEGANT 2.0 16V</h6>
+          
+            <button style="background:black;" ion-button round (click)="detalhes()">Detalhes</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/imgs/p1.jpeg" alt="">
+          <div class="produtoInfos">
+            <h6>ALFA ROMEO 156 ELEGANT 2.0 16V</h6>
+           
+            <button style="background:black;" ion-button round (click)="detalhes()">Detalhes</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/imgs/p1.jpeg" alt="">
+          <div class="produtoInfos">
+            <h6>ALFA ROMEO 156 ELEGANT 2.0 16V</h6>
+            
+            <button style="background:black;" ion-button round (click)="detalhes()">Detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <div class="footer">
+      <div>
+        <ion-icon ios="ios-car" md="md-car"(click)="antigos()"></ion-icon>
+        <p>Antigos</p>
+      </div>
+      <div>
+        <ion-icon ios="ios-calendar" md="md-calendar" (click)="eventos()"></ion-icon>
+        <p>Eventos</p>
+      </div>
+      <div>
+        <ion-icon name="ios-car-outline" (click)="seminovos()"></ion-icon>
+        <p>SemiNovos</p>
+      </div>
+      <div>
+        <ion-icon ios="ios-document" md="md-document"></ion-icon>
+        <p>Rifas</p>
+      </div>
+      <div>
+        <ion-icon ios="ios-add-circle" md="md-add-circle" (click)="mais()"></ion-icon>
+        <p>Mais...</p>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>
